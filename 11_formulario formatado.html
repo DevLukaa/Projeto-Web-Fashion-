@@ -1,0 +1,83 @@
+<!doctype html> <!--informa ao agente de usuario a versao do thml que deve ser renderizada-->
+<html lang="pt-br"> <!--informa a linguagem para o Browser mecanismo de busca-->
+     <head>
+        <title>Pagina de exemplo estrutura Básica</title>
+        <meta charset="utf-8"> <!--informar o tipo de codificaçao ulltilizada na pagina-->
+        <meta name="author" content="Lucas"> <!--informa o autor da pagina-->
+        <meta name="description" content="lista de documentos"> <!--passar uma descriçao para o usuario-->
+        <meta name="keywords" content="html, tecnologia"> <!--informa as palavras  chaves-->
+     
+         <style>
+
+            .formlogin{
+               width: 240px;
+               margin: 100px auto 0;
+               font-family: sans-serif;
+            }
+
+            .formlogin label{
+               margin-top: 15px;
+               display: block;
+               margin-bottom: 5px;
+            }
+
+            .formlogin fieldset{
+               background: #ccc;
+            }
+
+            .formlogin legend{
+               text-align: center;
+            }
+
+            #log, #pass, .logar{
+               display: block;
+               width: 100%;
+               box-sizing: border-box;
+               padding: 7px;
+               font-size: 20px;
+               border: none;
+            }
+
+            #log, #pass{
+               background: rgb(228, 226, 226);
+            }
+
+            #log:focus, #pass:focus{
+               background: white;
+            }
+
+            .logar{
+               margin-top: 15px;
+            }
+
+            #log{
+               margin-bottom: 15px;
+            }
+            input:hover{
+               background: white;
+            }
+         </style>
+      
+      </head>
+     <body>
+        <h1>Entre com Usuario e Senha</h1>
+
+        <form action="#" method="post" class="formlogin">
+            <fieldset>
+
+               <legend>Login</legend>
+            
+               <label for="log">Usuario:</label>
+               <input type="text" name="text" id="log" autofocus>
+               
+
+               <label for="pass">Senha:</label>
+               <input type="password" name="pass" id="pass">
+
+               <input type="submit" value="ok" class="logar">
+
+            </fieldset>
+
+        </form>
+     </body>
+</html>
